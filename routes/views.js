@@ -6,4 +6,9 @@ router.get('/', function(req, res){
 	res.render('index');
 });
 
+router.get('/signup', function(req, res){
+	res.locals.title = 'signup';
+	res.render('signup');
+});
+
 module.exports = router;
